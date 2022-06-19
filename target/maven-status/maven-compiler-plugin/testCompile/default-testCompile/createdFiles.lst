@@ -1,0 +1,4 @@
+stepDefinitions\BaseClassPhase2.class
+stepDefinitions\ProductStepsPhase2.class
+stepDefinitions\LoginStepsPhase2.class
+stepDefinitions\TestRunnerPhase2.class

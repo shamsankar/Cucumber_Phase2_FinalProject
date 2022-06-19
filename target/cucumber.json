@@ -1,0 +1,132 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Open the Sauce Demo Application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5314313800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have opened the Sauce Demo application",
+            "match": {
+              "location": "LoginStepsPhase2.i_have_opened_the_Sauce_Demo_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-05-13T17:45:52.496Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1935102100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClassPhase2.SetUo()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Validate the Positive Login",
+        "description": "",
+        "id": "this-feature-would-be-used-to-design-the-login-page-of-the-sauce-demo-application;validate-the-positive-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 88186500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClassPhase2.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 87158000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I Enter the UserName \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStepsPhase2.i_Enter_the_UserName(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71891900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I Enter the Password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStepsPhase2.i_Enter_the_Password(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 128753100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I Click on the Login Button",
+            "match": {
+              "location": "LoginStepsPhase2.i_Click_on_the_Login_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 996200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should be Landed on the SWAGLABS Page",
+            "match": {
+              "location": "LoginStepsPhase2.i_should_be_Landed_on_the_SWAGLABS_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      }
+    ],
+    "name": "This feature would be used to design the Login page of the Sauce Demo application",
+    "description": "",
+    "id": "this-feature-would-be-used-to-design-the-login-page-of-the-sauce-demo-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Login.feature",
+    "tags": []
+  }
+]
