@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 13272422300,
+              "duration": 5648245600,
               "status": "passed"
             },
             "line": 4,
@@ -24,11 +24,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-06-26T03:57:32.397Z",
+        "start_timestamp": "2022-07-04T10:32:32.158Z",
         "before": [
           {
             "result": {
-              "duration": 3476277400,
+              "duration": 1714919800,
               "status": "passed"
             },
             "match": {
@@ -43,7 +43,7 @@
         "after": [
           {
             "result": {
-              "duration": 124236900,
+              "duration": 68628900,
               "status": "passed"
             },
             "match": {
@@ -56,7 +56,7 @@
         "steps": [
           {
             "result": {
-              "duration": 131062300,
+              "duration": 99102400,
               "status": "passed"
             },
             "line": 7,
@@ -74,7 +74,7 @@
           },
           {
             "result": {
-              "duration": 99024100,
+              "duration": 69695000,
               "status": "passed"
             },
             "line": 8,
@@ -92,7 +92,7 @@
           },
           {
             "result": {
-              "duration": 122162500,
+              "duration": 112518100,
               "status": "passed"
             },
             "line": 9,
@@ -104,7 +104,7 @@
           },
           {
             "result": {
-              "duration": 481000,
+              "duration": 835300,
               "status": "passed"
             },
             "line": 10,
@@ -120,6 +120,131 @@
             "name": "@Sanity"
           }
         ]
+      },
+      {
+        "line": 3,
+        "name": "Open the Sauce Demo Application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5249519800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have opened the Sauce Demo application",
+            "match": {
+              "location": "LoginStepsPhase2.i_have_opened_the_Sauce_Demo_application()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T10:32:39.925Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1245272200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClassPhase2.SetUo()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Validate the Negative Login",
+        "description": "",
+        "id": "this-feature-would-be-used-to-design-the-login-page-of-the-sauce-demo-application;validate-the-negative-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 52603400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClassPhase2.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 87969800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I Enter the \"sham\" in UserName Field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sham\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepsPhase2.i_Enter_the_in_UserName_Field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73453300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I Enter the \"wrong_pwd\" in Password Field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"wrong_pwd\"",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginStepsPhase2.i_Enter_the_in_Password_Field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60404900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I Click on the Login Button",
+            "match": {
+              "location": "LoginStepsPhase2.i_Click_on_the_Login_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 31229000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I should get the error Message as \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 34
+                }
+              ],
+              "location": "LoginStepsPhase2.i_should_get_the_error_Message_as(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
       }
     ],
     "name": "This feature would be used to design the Login page of the Sauce Demo application",
@@ -128,5 +253,237 @@
     "keyword": "Feature",
     "uri": "file:src/test/java/features/Login.feature",
     "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Login to the Application http://www.saucedemo.com",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5312499700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have Opened the Swaglabs Application in Browser",
+            "match": {
+              "location": "ProductStepsPhase2.i_have_Opened_the_Swaglabs_Application_in_Browser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T10:32:46.717Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1237714100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClassPhase2.SetUo()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Validate the Positive Login",
+        "description": "",
+        "id": "this-feature-would-be-used-to-test-the-price-of-the-products;validate-the-positive-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 59489800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClassPhase2.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 94154000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I Enter the UserName \"standard_user\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStepsPhase2.i_Enter_the_UserName(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71061500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I Enter the Password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginStepsPhase2.i_Enter_the_Password(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 112137300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I Click on the Login Button",
+            "match": {
+              "location": "LoginStepsPhase2.i_Click_on_the_Login_Button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 389800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I should be Landed on the SWAGLABS Page",
+            "match": {
+              "location": "LoginStepsPhase2.i_should_be_Landed_on_the_SWAGLABS_Page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@F_Login"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Login to the Application http://www.saucedemo.com",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5268063000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I have Opened the Swaglabs Application in Browser",
+            "match": {
+              "location": "ProductStepsPhase2.i_have_Opened_the_Swaglabs_Application_in_Browser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-04T10:32:53.620Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1214663400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClassPhase2.SetUo()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Validate the Prices of the Product",
+        "description": "",
+        "id": "this-feature-would-be-used-to-test-the-price-of-the-products;validate-the-prices-of-the-product;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 59795400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClassPhase2.TearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 283561600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I have logged in Successfull",
+            "match": {
+              "location": "ProductStepsPhase2.i_have_logged_in_Successfull()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34959500,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Validate the \"Sauce Labs Backpack\" and \"$29.99\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sauce Labs Backpack\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"$29.99\"",
+                  "offset": 39
+                }
+              ],
+              "location": "ProductStepsPhase2.validate_the_and(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@F_Login"
+          }
+        ]
+      }
+    ],
+    "name": "This feature would be used to test the price of the products",
+    "description": "",
+    "id": "this-feature-would-be-used-to-test-the-price-of-the-products",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/Products.feature",
+    "tags": [
+      {
+        "name": "@F_Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
